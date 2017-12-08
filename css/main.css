@@ -1,0 +1,40 @@
+#main-content {
+    /* background-color: #f19d9d; */
+    width: 85%;
+    height: 500px;
+    margin-top: 10px;
+
+}
+
+.img-holder {
+    position: relative;
+    display: inline-block;
+}
+
+.img-holder img {
+    display: block;
+}
+
+.img-holder p {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #070202;
+    
+}
+#slider-and-topic{
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 249, 253, 0.185);
+    padding: 20px
+}
+body{
+    background-image: url("../images/background1.jpg")
+}
+.custom{
+    background-color: #fa111156
+}
