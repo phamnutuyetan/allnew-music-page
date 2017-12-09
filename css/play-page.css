@@ -65,13 +65,12 @@ overflow: hidden;
 position: relative;
 text-align: left;
 position: fixed;
-height: 100%;
 width: 50px;
 transition: 0.5s;
 /*max-width: 50px;*/
 /*background-color: #3b4343;*/
 z-index: 981;
-background-color: #FFFFFF;
+background-color: rgba(255, 255, 255, 0.897);
 box-shadow: 2px 0 5px 0 rgba(76, 76, 76, 0.5);
 }
 
