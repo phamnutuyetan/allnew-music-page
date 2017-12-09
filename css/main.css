@@ -1,7 +1,7 @@
 #main-content {
     /* background-color: #f19d9d; */
     width: 85%;
-    height: 500px;
+    height: 1500px;
     margin-top: 10px;
 
 }
@@ -29,12 +29,38 @@
 #slider-and-topic{
     width: 100%;
     height: auto;
-    background-color: rgba(255, 249, 253, 0.185);
+    background-color: rgba(248, 248, 247, 0.466);
     padding: 20px
 }
 body{
     background-image: url("../images/background1.jpg")
 }
 .custom{
-    background-color: #fa111156
+    background-color: #00000046
+}
+.grid-home{
+    width: 100%;
+    height: auto;
+    background-color: rgba(92, 250, 145, 0.514);
+    padding: 10px
+}
+.list-media-text>h6,p{
+    margin-bottom:0;
+    text-align: left;
+    margin-left: 20px
+}
+.small-text{
+    font-size: 14px;
+    font-style: italic
+}
+hr.style11 {
+	border-top: 1px solid #fa1f1f;
+	border-bottom: 1px solid rgb(253, 90, 90);
+}
+.bang-xep-hang{
+    width: 100%;
+    height: auto;
+    background-color: rgba(228, 245, 72, 0.514);
+    padding: 10px;
+    margin-top:10px
 }
