@@ -1,7 +1,7 @@
 #main-content {
     /* background-color: #f19d9d; */
     width: 85%;
-    height: 1500px;
+    height: 100%;
     margin-top: 10px;
 }
 
@@ -86,8 +86,10 @@ hr.style11 {
     width: 100%;
     border: none;
     height: fit-content;
-    padding: 10px 0px;
-    margin-top: 10px
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    background-image: url('../images/bg-footer.jpg')
 }
 
 .sm-pad{
@@ -99,22 +101,26 @@ hr.style11 {
     padding: 10px;
     margin-top: 10px
 }
-.bg-title{
-    
-    position: relative;
-    z-index: 1;
+#myChart{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 245, 72, 0.514);
+    padding: 10px;
+    margin-top: 10px;
 }
-.bg-title:before{
-    border-top: 2px solid #dfdfdf;
-    content: "";
-    margin: 0 auto;
-    /* this centers the line to the full width specified */
-    position: absolute;
-    /* positioning must be absolute here, and relative positioning must be applied to the parent */
-    top: 50%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 95%;
-    z-index: -1;
+@font-face {
+    font-family: 'Coiny';
+    src: url('../font/coiny.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h4{
+    font-family: 'Coiny'
+}
+.borderimg1 { 
+    border: 10px solid transparent;
+    
+    -webkit-border-image: url('../images/border.png') 30 round; /* Safari 3.1-5 */
+    -o-border-image: url('../images/border.png') 30 round; /* Opera 11-12.1 */
+    border-image: url('../images/border.png') 30 round;
 }

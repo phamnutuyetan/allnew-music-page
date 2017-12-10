@@ -70,7 +70,7 @@ transition: 0.5s;
 /*max-width: 50px;*/
 /*background-color: #3b4343;*/
 z-index: 981;
-background-color: rgba(255, 255, 255, 0.897);
+background-color: rgba(255, 255, 255, 0.801);
 box-shadow: 2px 0 5px 0 rgba(76, 76, 76, 0.5);
 }
 
@@ -424,6 +424,14 @@ box-shadow: 2px 0 5px 0 rgba(76, 76, 76, 0.5);
 
 .content-footer-left > p {
 	margin: 0px;
+	color: #000;
+	font-weight: bolder;
+	font-size: 18px
+}
+.content-footer-center >div> a {
+	margin: 0px;
+	color: rgb(59, 0, 0);
+	font-weight: bold;
 }
 
 h4 {
