@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Music Player
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/play-page.css">
+	
+</head>
+
+<body>
+	<div class="lp-vertical-nav">
+        <!-- <div style="height: 120px">
+            </div> -->
+        <div id="btn-close-open" style="background-image: url(images/play-page/button_open.png); transition: 0.5s">
+        </div>
+        <div id="lp-vertical-nav-content" style="vertical-align: middle; width: 150px">
+
+            <div>
+                <div class="nav-box">
+                    <img src="images/play-page/home-xxl1.png">
+                    <p>Trang chủ</p>
+                </div>
+                <div class="nav-box">
+                    <img src="images/play-page/images1.png">
+                    <p>Nghe</p>
+                </div>
+                <div class="nav-box">
+                    <img src="images/play-page/topic1.png">
+                    <p>Chủ đề</p>
+                </div>
+                <div class="nav-box">
+                    <img src="images/play-page/album1.png">
+                    <p>Album</p>
+                </div>
+                <div class="nav-box">
+                    <img src="images/play-page/video1.png">
+                    <p>Video</p>
+                </div>
+                <div class="nav-box">
+                    <img src="images/play-page/artist1.png">
+                    <p>Nghệ sĩ</p>
+                </div>
+                <div class="nav-box">
+                    <img src="images/play-page/contacts1.png">
+                    <p>Liên hệ</p>
+                </div>
+            </div>
+        </div>
+
+	</div>
+	<center>
+		<div id="main-content">
+			<div class="lp-content">
+				<div id="left-column" class="main-content-left">
+					<div class="music-content sss" style=" background-color: #383838; position: relative;">
+						<div class="mc-top sssa ls-scroll-bar" style="height: 70%">
+							<div class="mc-left">
+								<p>
+									Bài hát: Vẫn
+									<br/> Sáng tác: Tiên Cookie
+									<br/> Thể loại: balab
+								</p>
+								<img style="width: 100px; height: 100px; border-radius: 50%" src="images/play-page/Y6eOVqc8J8C8Kg8ht3xF596333f6b426f.jpg">
+								<p>BÍCH PHƯƠNG</p>
+							</div>
+							<div class="mc-right">
+								<img src="images/play-page/up-quote.png">
+								<div class="ls-scroll-bar">
+									Bài hát: Cớ Sao Giờ Lại Chia Xa - Bích Phương
+									<br/> Lần mà người bối rối nói rằng yêu em thôi
+									<br/> Cũng là lần đầu, mà em thấy mình nhỏ bé..
+									<br/> Lần mà người đã đứng chờ em dưới cơn mưa đêm
+									<br/> Làm tim em rung lên, tưởng rằng anh sẽ mãi yêu em
+									<br/> Mình đã hứa bên nhau cơ mà,
+									<br/> Cớ sao giờ lại chia xa?
+									<br/> [Verse]
+									<br/> Lần mà người bối rối nói rằng yêu em thôi
+									<br/> Cũng là lần đầu, mà em thấy mình nhỏ bé..
+									<br/> Lần mà người đã đứng chờ em dưới cơn mưa đêm
+									<br/> Làm tim em rung lên, tưởng rằng anh sẽ mãi yêu em
+									<br/> [Chorus]
+									<br/> Mình đã hứa bên nhau cơ mà,
+									<br/> Cớ sao giờ lại chia xa? Có hay rằng trong đời em, khoảnh khắc tuổi
+									<br/>xuân đẹp nhất là ngày bên anh?
+									<br/> Người là cánh chim bay ngang trời
+									<br/> Để em nơi đây cứ mãi
+									<br/> Ngước lên trời cao thật cao ước được là gió.
+									<br/>
+								</div>
+								<img src="images/play-page/down-quote.png">
+							</div>
+						</div>
+		
+						<div class="mc-bottom sssa">
+							<div id="play-status" style="position: relative;">
+								<span id="ls-cur">00:40</span>
+								<span id="ls-end">03:57</span>
+								<img src="images/play-page/pre-btn.png" style="width: 20px;">
+								<img src="images/play-page/play-btn.png" style="width: 20px;">
+								<img src="images/play-page/next-btn.png" style="width: 20px;">
+								<progress class="lp-progress-bar" name="mp3-status" value="30" max="100">
+							</div>
+						</div>
+		
+						<div style="margin:20px; text-align: left; display: inline-block; float: left;">
+							<div class="image-btn sssa">
+								<img src="images/downloading.png">
+								<p>Tải về</p>
+							</div>
+							<div class="image-btn sssa">
+								<img src="images/share.png">
+								<p>Chia sẻ</p>
+							</div>
+							<div class="image-btn sssa">
+								<img src="images/star.png">
+								<p>Thích</p>
+							</div>
+						</div>
+		
+						<div style="margin:20px; text-align: right; display: inline-block; float: right;">
+							<div class="image-btn sssa" style="background-color: transparent; border: none">
+								<img src="images/listen.png">
+								<p style="font-size: 16px">900.824.243</p>
+							</div>
+						</div>
+		
+					</div>
+					<div class="ls-comment" style="width: 682px; text-align: left;">
+						<h3 style="margin-bottom: 5px; margin-top: 10px">BÌNH LUẬN (1000)</h3>
+						<form class="frm-comment">
+							<img class="fn-useravatar" src="images/play-page/grid-image-2.jpg">
+							<div class="wrap-comment">
+								<textarea name="content" rows="3" style="width: 100%;"></textarea>
+								<button name="btnSubmit" type="submit" class="common-btn btn-comment" style="">Bình luận</button>
+								<div style="clear: all"></div>
+							</div>
+						</form>
+						<div class="comment-item" style="">
+							<img src="images/play-page/grid-image-1.jpg">
+							<div class="item-content" style="color: black">
+								<p class="item-name">vyle</p>
+								<p class="item-body">Sky chúc cho chị Bích Phương ngày càng thành công hơn nữa trong sự nghiệp ạ! Bài mới của chị hay lắm ạ, chị ra nhiều
+									bài hay nữa nha chị! Yêu thương!
+									<3﻿</p>
+							</div>
+							<span class="time-comment">18:00 09/10/2017</span>
+						</div>
+						<div class="comment-item" style="">
+							<img src="images/play-page/grid-image-2.jpg">
+							<div class="item-content" style="color: black">
+								<p class="item-name">Hồng Hạnh</p>
+								<p class="item-body">bài này hay mà chị lại hát rất cảm động nghe muốn khóc</p>
+							</div>
+							<span class="time-comment">18:00 09/10/2017</span>
+						</div>
+						<div class="comment-item" style="">
+							<img src="images/play-page/grid-image-3.jpg">
+							<div class="item-content" style="color: black">
+								<p class="item-name">Mèo</p>
+								<p class="item-body">^^nghe buồn nhưng cảm giác vẫn trong trẻo thế nào ấy Êm thấy bài này dễ cảm hơn bản hàn</p>
+							</div>
+							<span class="time-comment">18:00 09/10/2017</span>
+						</div>
+						<div class="comment-item" style="">
+							<img src="images/play-page/grid-image-1.jpg">
+							<div class="item-content" style="color: black">
+								<p class="item-name">vyle</p>
+								<p class="item-body">Sky chúc cho chị Bích Phương ngày càng thành công hơn nữa trong sự nghiệp ạ! Bài mới của chị hay lắm ạ, chị ra nhiều
+									bài hay nữa nha chị! Yêu thương!
+									<3﻿</p>
+							</div>
+							<span class="time-comment">18:00 09/10/2017</span>
+						</div>
+						<div class="comment-item" style="">
+							<img src="images/play-page/grid-image-2.jpg">
+							<div class="item-content" style="color: black">
+								<p class="item-name">Hồng Hạnh</p>
+								<p class="item-body">bài này hay mà chị lại hát rất cảm động nghe muốn khóc</p>
+							</div>
+							<span class="time-comment">18:00 09/10/2017</span>
+						</div>
+						<div class="comment-item" style="">
+							<img src="images/play-page/grid-image-3.jpg">
+							<div class="item-content" style="color: black">
+								<p class="item-name">vyle</p>
+								<p class="item-body">Sky chúc cho chị Bích Phương ngày càng thành công hơn nữa trong sự nghiệp ạ! Bài mới của chị hay lắm ạ, chị ra nhiều
+									bài hay nữa nha chị! Yêu thương!
+									<3﻿</p>
+							</div>
+							<span class="time-comment">18:00 09/10/2017</span>
+						</div>
+		
+						<button class="common-btn btn-loadmore" style="">
+							Xem thêm
+						</button>
+					</div>
+				</div>
+				<div id="right-column" style="vertical-align: top; text-align: initial; padding: 10px;">
+					<h4>BẢNG XẾP HẠNG BÀI HÁT</h4>
+                    <ul class="list-unstyled bang-xep-hang">
+                        <hr class="style11">
+                        <div class="media" style="margin-bottom:10px">
+                            <img src="~/../images/singer-1.jpg" width="64px" height="64px">
+                            <div class="media-body list-media-text">
+                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <p class="text-light">Tên Ca Sĩ</p>
+                                <p class="small-text">Lượt xem</p>
+                            </div>
+                        </div>
+                        <hr class="style11">
+                        <div class="media" style="margin-bottom:10px">
+                            <img src="~/../images/singer-1.jpg" width="64px" height="64px">
+                            <div class="media-body list-media-text">
+                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <p class="text-light">Tên Ca Sĩ</p>
+                                <p class="small-text">Lượt xem</p>
+                            </div>
+                        </div>
+                        <hr class="style11">
+                        <div class="media" style="margin-bottom:10px">
+                            <img src="~/../images/singer-1.jpg" width="64px" height="64px">
+                            <div class="media-body list-media-text">
+                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <p class="text-light">Tên Ca Sĩ</p>
+                                <p class="small-text">Lượt xem</p>
+                            </div>
+                        </div>
+                        <hr class="style11">
+                        <div class="media" style="margin-bottom:10px">
+                            <img src="~/../images/singer-1.jpg" width="64px" height="64px">
+                            <div class="media-body list-media-text">
+                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <p class="text-light">Tên Ca Sĩ</p>
+                                <p class="small-text">Lượt xem</p>
+                            </div>
+                        </div>
+                        <hr class="style11">
+                        <div class="media" style="margin-bottom:10px">
+                            <img src="~/../images/singer-1.jpg" width="64px" height="64px">
+                            <div class="media-body list-media-text">
+                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <p class="text-light">Tên Ca Sĩ</p>
+                                <p class="small-text">Lượt xem</p>
+                            </div>
+                        </div>
+                        <hr class="style11">
+                        <div class="media" style="margin-bottom:10px">
+                            <img src="~/../images/singer-1.jpg" width="64px" height="64px">
+                            <div class="media-body list-media-text">
+                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <p class="text-light">Tên Ca Sĩ</p>
+                                <p class="small-text">Lượt xem</p>
+                            </div>
+                        </div>
+                        <hr class="style11">
+                        <a href="#">Xem thêm ></a>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</center>
+	
+	<footer>
+        <div id="footer">
+            <center>
+                <div class="content-footer">
+                    <div class="content-footer-left" itemscope="" itemtype="http://schema.org/Organization" style="display: inline-block; vertical-align: top">
+                        <img itemprop="logo" src="images/logo2.png" height="100%" width="100%" alt="Zing MP3 - Đỉnh Cao Âm Nhạc" style=" height: 70px; width: 140px">
+                        <br>
+                        <p class="license">© 2015 4CONANG Corporation</p>
+                        <br>
+                        <p class="license">Giấy phép MXH số 314/GP-BTTTT.</p>
+                    </div>
+                    <div class="content-footer-center" style="display: inline-block;">
+                        <div>
+                            <a title="Giới thiệu" rel="nofollow" href="https://mp3.zing.vn/huong-dan/about">Giới thiệu</a>
+                        </div>
+                        <div>
+                            <a title="Điều khoản" rel="nofollow" href="https://mp3.zing.vn/huong-dan/terms">Điều khoản</a>
+                        </div>
+                        <div>
+                            <a title="Quảng cáo" rel="nofollow" href="http://ads.zing.vn/" target="_blank">Quảng cáo</a>
+                        </div>
+                        <div>
+                            <a title="FAQs" rel="nofollow" href="http://v3.mp3.zing.vn/huong-dan/index.html">FAQs</a>
+                        </div>
+                        <div>
+                            <a title="Copyright" rel="nofollow" href="https://mp3.zing.vn/huong-dan/copyright">Copyright</a>
+                        </div>
+                        <div>
+                            <a title="MP3 VIP" href="http://mp3.zing.vn/vip">MP3 VIP</a>
+                        </div>
+                        <div>
+                            <a title="Ứng dụng" href="https://mp3.zing.vn/apps">Ứng dụng</a>
+                        </div>
+                        <div>
+                            <a title="Góp ý/Báo lỗi" rel="nofollow" href="https://docs.google.com/forms/d/1EHv8aYwV3rqUX3KE4H9IKpawf11cXFt8hr1iuW1pBWA/viewform?c=0&amp;w=1"
+                                target="_blank">Góp ý</a>
+                        </div>
+                        <div>
+                            <a title="APIs" rel="nofollow" href="https://mp3.zing.vn/huong-dan/developer">APIs</a>
+                        </div>
+                        <div>
+                            <a title="divên hệ" rel="nofollow" href="https://mp3.zing.vn/huong-dan/contact">liên hệ</a>
+                        </div>
+                        <div>
+                            <a title="APIs" rel="nofollow" href="https://mp3.zing.vn/huong-dan/developer">APIs</a>
+                        </div>
+                        <div>
+                            <a title="divên hệ" rel="nofollow" href="https://mp3.zing.vn/huong-dan/contact">liên hệ</a>
+                        </div>
+                        <div>
+                            <a title="divên hệ" rel="nofollow" href="https://mp3.zing.vn/huong-dan/contact">liên hệ</a>
+                        </div>
+                        <div>
+                            <a title="APIs" rel="nofollow" href="https://mp3.zing.vn/huong-dan/developer">APIs</a>
+                        </div>
+                        <div>
+                            <a title="divên hệ" rel="nofollow" href="https://mp3.zing.vn/huong-dan/contact">liên hệ</a>
+                        </div>
+                    </div>
+                    <div class="content-footer-right" style="display: inline-block;">
+
+                    </div>
+                </div>
+            </center>
+
+        </div>
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/usm/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+	    crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+	    crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+	<script>
+        var navBar = {
+            isOpenNav: false,
+            width: "50px"
+        }
+
+        $("#left-column > div > h4").css("text-align", "left");
+        $("#right-column > div").css({
+            "margin-top": "10px",
+            "margin-bottom": "10px"
+        });
+        $("#left-column > div").css({
+            "margin-top": "10px",
+            "margin-bottom": "20px"
+        });
+        $("#left-col-row6 > .uk-grid-small.uk-text-center.uk-grid > div").css("margin-bottom", "10px");
+
+        // $(".uk-grid-margin").css("padding-left", "0px");
+        setStyleElement();
+
+        function setEqualRow() {
+            for (let i = 1; i < 5; i++) {
+                $("#right-col-row" + i).css("height", $("#left-col-row" + i).innerHeight());
+            }
+        }
+
+        function setWidthNav() {
+            if (navBar.isOpenNav) {
+                $("#btn-close-open").css({
+                    "transform": "rotate(0deg)"
+                });
+                navBar.isOpenNav = false;
+                navBar.width = "50px";
+
+                $(".lp-vertical-nav").css("width", navBar.width);
+            } else {
+                $("#btn-close-open").css({
+                    "transform": "rotate(180deg)"
+                });
+                navBar.isOpenNav = true;
+                navBar.width = "150px";
+                $(".lp-vertical-nav").css("width", navBar.width);
+            }
+            setStyleElement();
+        }
+
+        $(".lp-vertical-nav .nav-box").hover(
+            function () {
+                let curImg = $(this).find('img')[0];
+                let src = curImg.src.replace("1", "3");
+                curImg.src = src;
+                $(this).css({
+                    " border-left": "2px solid #ff3399",
+                    "box-shadow": " 0 0 2px 0 rgba(76, 76, 76, 0.5)",
+                    "background-color": "rgba(221, 227, 230, 0.5)",
+                    "color": "#ff3399"
+                })
+            },
+            function () {
+                let curImg = $(this).find('img')[0];
+                let src = curImg.src.replace("3", "1");
+                curImg.src = src;
+                $(this).css({
+                    " border-left": "none",
+                    "box-shadow": " none",
+                    "background-color": "transparent",
+                    "color": "#383838"
+                })
+            }
+        );
+
+        $("#btn-close-open").mouseenter(function () {
+            setWidthNav();
+        })
+        $(window).resize(() => {
+            setStyleElement();
+        });
+
+        function setStyleElement() {
+            if ($(window).innerWidth() - parseInt(navBar.width) < 1100) {
+                if ($(window).innerWidth() - parseInt(navBar.width) < 420) {
+                    setSmallScreenStyle();
+                } else {
+                    setMediumScreenStyle();
+                }
+            } else {
+                setBigScreenStyle();
+            }
+            //setLeftNavPositon();
+        }
+
+        function setSmallScreenStyle() {
+            $("#home-content").css({
+                "width": "calc(100% - " + navBar.width + ")",
+                "margin-left": navBar.width
+            });
+            //$("#left-column").css({"width": "calc(100% - " + navBar.width + ")", "padding": "0px"});
+            $("#left-column").css({
+                "width": "100%",
+                "padding": "0px"
+            });
+            $("#right-column > #right-col-row1").css("display", "inline-block");
+            $("#right-column").css({
+                "width": "100%",
+                "display": "initial"
+            });
+            $("#right-column > div").css("width", "100%");
+            //$("body").css("font-size", "14px !importan");
+            //$("#right-singer-grid").css({"width": "540px", "height":"400px"});
+            //$(".lp-vertical-nav").css("width", "5%");
+
+        }
+
+        function setMediumScreenStyle() {
+            $("#home-content").css({
+                "width": "calc(100% - " + navBar.width + ")",
+                "margin-left": navBar.width
+            });
+            //$("#left-column").css({"width": "calc(100% - " + navBar.width + ")", "padding": "0px"});
+            $("#left-column").css({
+                "width": "100%",
+                "padding": "0px"
+            });
+            $("#right-column > div").css("width", "418px");
+            $("#right-column > #right-col-row1").css("display", "none");
+            $("#right-column").css({
+                "width": "100%",
+                "display": "initial"
+            });
+
+            //$("body").css("font-size", "14px !importan");
+            //$("#right-singer-grid").css({"width": "540px", "height":"400px"});
+            //$(".lp-vertical-nav").css("width", "5%");
+
+        }
+
+        function setBigScreenStyle() {
+
+            $("#left-column").css({
+                "width": "682px",
+                "padding": "0px"
+            });
+            $("#right-column").css({
+                "width": "418px",
+                "display": "inline-block"
+            });
+            $("#right-column > div").css("width", "418px");
+            $("#right-column > #right-col-row1").css("display", "inline-block");
+            $("#home-content").css({
+                "width": "max-content",
+                "margin-left": navBar.width
+            });
+            //$("body").css("font-size", "14px !importan");
+            //$("#right-singer-grid").css({"width": "540px", "height":"400px"});
+            //$(".lp-vertical-nav").css("width", "5%");
+            setEqualRow();
+
+
+        }
+
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                datasets: [{
+                        label: '# of Views',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: '#transparent',
+                        borderColor: '#ece802',
+                        borderWidth: 2
+                    },
+                    {
+                        label: '# of Downloads',
+                        data: [21, 10, 13, 15, 21, 13],
+                        backgroundColor: 'transparent',
+                        borderColor: '#00e01e',
+                        borderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: "white",
+                            fontStyle: "bold"
+                        },
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: "white",
+                            fontStyle: "bold"
+                        },
+                    }]
+                },
+
+            }
+        });
+    </script>
+</body>
+
+</html>

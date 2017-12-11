@@ -478,6 +478,140 @@ h4 {
 	color: #ff3399;
 	cursor: pointer;
 }
+/* An Them Vao */
+.bang-xep-hang {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.text-light{
+    font-size:14px; 
+    font-family:'Mitr-ExtraLight';
+    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.904),1px 1px #000000;
+}
+.list-media-text>h6,
+p {
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+
+/* aaaaaaaaaaaaaaaa */
+#left-column {
+    width: 682px;
+    min-height: 650px;
+    display: inline-block;
+    /*margin-left: 200px;*/
+    margin-bottom: 5px;
+}
+#right-column {
+    width: 418px;
+    min-height: 650px;
+    display: inline-block;
+    /*margin-left: 3px;*/
+    margin-bottom: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+#realtime-chart {
+    width: 296px;
+    height: 320px;
+    border: 1px solid #CDCDCD;
+    background-color: #ECF4EA;
+}
+#left-singer-grid {
+    width: 256px;
+    height: 256px;
+    float: left;
+}
+#right-singer-grid {
+    width: 540px;
+    height: 256px;
+    float:left;
+    margin-left:4px;
+}
+#footer{
+    height: 100px;
+    clear: both;
+    border: 1px solid #CDCDCD;
+    background-color: #47515C;
+    color: #fff;
+    float: bottom;
+    margin-bottom: 0px;
+}
+
+#footer a {
+    color: #fff;
+}
+
+.class-row-content {
+    width: 100%;
+    text-align: center;
+}
+ 
+.content-box {
+    display: inline-block;
+}
+.content-box .left-content {
+    width: 682px;
+    display: inline-block; 
+    vertical-align: top;
+}
+.content-box .right-content{
+    width: 418px;
+    display: inline-block;
+}
+ 
+.uk-grid-small.uk-text-center.uk-grid > div {
+    margin: 0px;
+    clear: all;
+}
+.uk-grid-small.uk-text-center.uk-grid {
+    display: inline-flex !important;
+    margin: 0px;
+}
+
+.right-col-row1>div>div{
+    padding: 30px !important;
+}
 
 
+#right-column > div{
+    vertical-align: top;
+    width: 418px;
+    display: inline-block;
+}
+
+.text-link {
+    cursor: pointer;
+}
+
+.text-link:hover {
+    color: #ff3399;
+}
+
+#home-content span {
+        cursor: pointer;
+}
+
+#home-content span:hover{
+    border-bottom: 1px solid #ff3399;
+}
+
+#home-content p{
+    cursor: pointer;
+}
+
+#home-content p:hover {
+    color: #ff3399 !important; 
+}
+
+.uk-grid-small.uk-text-center >div {
+    padding-bottom: 10px;
+}
 
