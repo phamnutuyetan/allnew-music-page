@@ -415,22 +415,24 @@ box-shadow: 2px 0 5px 0 rgba(76, 76, 76, 0.5);
 
 .content-footer-center {
 	width: 400px;
+	
 }
 
 .content-footer-center > div{
 	display: inline-block;
 	width: 100px;
+	
 }
 
 .content-footer-left > p {
 	margin: 0px;
-	color: #000;
+	color: rgb(255, 255, 255);
 	font-weight: bolder;
 	font-size: 18px
 }
-.content-footer-center >div> a {
+.content-footer-center >div >a {
 	margin: 0px;
-	color: rgb(59, 0, 0);
+	color: #000;
 	font-weight: bold;
 }
 
@@ -488,7 +490,7 @@ h4 {
     
 }
 
-.text-light{
+.extralight-text{
     font-size:14px; 
     font-family:'Mitr-ExtraLight';
     text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.904),1px 1px #000000;
@@ -501,7 +503,7 @@ p {
     
 }
 
-/* aaaaaaaaaaaaaaaa */
+/* Column without Bootstrap */
 #left-column {
     width: 682px;
     min-height: 650px;
