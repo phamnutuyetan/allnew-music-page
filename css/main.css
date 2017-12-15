@@ -1,27 +1,125 @@
-#main-content {
-    /* background-color: #f19d9d; */
-    width: 85%;
-    height: 100%;
-    margin-top: 10px;
-}
+/* Custom Font-face */
+
 @font-face {
     font-family: 'Coiny';
     src: url('../font/coiny.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Mitr';
     src: url('../font/Mitr-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Mitr-ExtraLight';
     src: url('../font/Mitr-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+
+
+/* Layout for Content */
+
+#main-content {
+    /* background-color: #f19d9d; */
+    width: 85%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+#slider-content {
+    width: 100%;
+    background-color: rgba(248, 248, 247, 0.466);
+    padding: 20px
+}
+
+.bang-xep-hang {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#album-hot {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    border: none;
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    background-image: url('../images/footer-bg.png');
+    /* background-blend-mode: hard-light;*/
+    background-color: rgba(0, 0, 0, 0.664)
+}
+
+#video-hot {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#artist-hot {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+#reatimeChart {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    background-color: #1722189a;
+}
+
+
+/* Style for Tags */
+
+body {
+    background-image: url("../images/background2.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-blend-mode: color-burn;
+    background-color: #027fbdda
+}
+
+hr.hr-style {
+    border-top: 1px solid #fa1f1f;
+    border-bottom: 1px solid rgb(253, 90, 90);
+}
+
+a {
+    color: #ffffff;
+    text-shadow: 0 0 15px rgb(48, 5, 240), 0 0 15px rgb(48, 5, 240), 0 0 15px rgb(48, 5, 240), ;
+}
+
+h4 {
+    font-family: 'Coiny';
+    text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255);
+    color: #1d0281;
+    background-image: url('../images/blue-glow-line-png-22.png');
+    margin-top: 20px
+}
+
+
+/* Style for Image */
+
 .img-holder {
     position: relative;
     display: inline-block;
@@ -42,24 +140,84 @@
     text-shadow: 0 0 10px #070202;
 }
 
-#slider-content {
-    width: 100%;
-    background-color: rgba(248, 248, 247, 0.466);
-    padding: 20px
+
+/* Overwrite Bootstrap Style */
+
+.custom-navbar {
+    background-color: #ffffff;
+    width: 800px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
-body {
-    background-image: url("../images/background4.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-blend-mode:color-burn;
-    background-color: #027fbdda
+.btn-outline-success {
+    border: 1px solid #4355fca4;
+    color: #000cad;
+    background-color: #ffffffb2
 }
 
-.custom {
-    background-color: #014064
+.dropdown-toggle {
+    color: #000cad
 }
+
+.btn-outline-success:hover {
+    border: 1px solid #4355fca4;
+    color: #ffffff;
+    background-color: #2132f0
+}
+
+.form-control {
+    border: 1px solid #4355fca4;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.profile-button {
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.profile-button:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.profile-button:focus,
+.profile-button.focus,
+.profile-button.disabled,
+.profile-button:disabled,
+.profile-button:not([disabled]):not(.disabled):active,
+.profile-button:not([disabled]):not(.disabled).active,
+.show>.profile-button.dropdown-toggle {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.dropdown-item:hover {
+    background-color: #5353536e;
+    color: #fff
+}
+
+.button-upload {
+    background-color: transparent;
+    padding: 0;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.img-upload {
+    width: 34px;
+    height: 34px;
+    margin-right: 5px;
+}
+
+
+/* Style for Grid/List */
 
 .grid-image {
     width: 100%;
@@ -74,131 +232,94 @@ p {
     margin-bottom: 0;
     text-align: left;
     margin-left: 20px;
-    
 }
+
+
+/* Style for Typography */
 
 .small-text {
     font-size: 14px;
     font-style: italic;
     font-family: Mitr-ExtraLight;
-    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.904),1px 1px #000000;
-}
-.extralight-text{
-    font-size:14px; 
-    font-family:'Mitr-ExtraLight';
-    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.904),1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.904), 1px 1px #000000;
 }
 
-hr.hr-style {
-    border-top: 1px solid #fa1f1f;
-    border-bottom: 1px solid rgb(253, 90, 90);
+.extralight-text {
+    font-size: 14px;
+    font-family: 'Mitr-ExtraLight';
+    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.904), 1px 1px #000000;
 }
 
-.bang-xep-hang {
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    padding: 10px;
-    margin-top: 10px;
-    
-}
-
-#album-hot {
-    width: 100%;
-    height: 100%;
-    background-color: transparent   ;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-#footer {
-    position: absolute;
-    width: 100%;
-    border: none;
-    height: fit-content;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin-top: 40px;
-    background-image: url('../images/footer-bg.png');
-    /* background-blend-mode: hard-light;*/
-    background-color: rgba(0, 0, 0, 0.664) 
-}
-
-.sm-pad {
-    padding: 5px;
-    
-}
-
-#artist-hot {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    
-}
-
-#reatimeChart {
-    width: 100%;
-    height: 100%;
-    margin-top: 15px;
-    background-color: #1722189a;
+.card-text {
+    text-align: center;
+    margin: 0;
+    color: white;
+    text-shadow: -1px -1px 10px rgb(0, 30, 163), 1px -1px 10px rgb(0, 30, 163), -1px 1px 10px rgb(0, 30, 163), 1px 1px 10px rgb(0, 30, 163);
 }
 
 
-
-h4 {
-    font-family: 'Coiny';
-    text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255),0 0 15px rgb(255, 255, 255);
-    color: #1d0281;
-    background-image: url('../images/blue-glow-line-png-22.png');
-    margin-top:20px
-}
-
+/* Components Decoration */ 
 .glow-border {
     border: 10px solid transparent;
     border-image: url('../images/border1.png') 30 round;
 }
-#video-hot{
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    padding: 10px;
-    margin-top: 10px;
-}
-a{
-    color: #ffffff;
-    text-shadow: 0 0 15px rgb(48, 5, 240), 0 0 15px rgb(48, 5, 240),0 0 15px rgb(48, 5, 240),;
-}
-.card-text{
-    text-align: center;
-    margin: 0;
-    color: white;
-    text-shadow:
-    -1px -1px 10px rgb(0, 30, 163),
-    1px -1px 10px rgb(0, 30, 163),
-    -1px 1px 10px rgb(0, 30, 163),
-    1px 1px 10px rgb(0, 30, 163);  
-}
-.shadow{
+
+.shadow {
     box-shadow: 2px 2px 2px rgba(238, 161, 9, 0.719);
 }
 
-.media>div>h6,p, ul>a{
-    text-shadow: 2px 2px 2px rgba(250, 0, 0, 0.904),2px 2px 2px #000000;
+.media>div>h6,
+.media>div>p,
+ul>a {
+    text-shadow: 2px 2px 2px rgba(250, 0, 0, 0.904), 2px 2px 2px #000000;
     color: #ffffff;
     font-family: 'Mitr';
 }
+
 .media>img,
-hr{
+hr {
     box-shadow: 2px 2px 2px rgba(250, 0, 0, 0.904);
 }
-ul>a:hover{
+
+ul>a:hover {
     color: white;
-    text-shadow:
-    -1px -1px 10px rgb(0, 30, 163),
-    1px -1px 10px rgb(0, 30, 163),
-    -1px 1px 10px rgb(0, 30, 163),
-    1px 1px 10px rgb(0, 30, 163);  
+    text-shadow: -1px -1px 10px rgb(0, 30, 163), 1px -1px 10px rgb(0, 30, 163), -1px 1px 10px rgb(0, 30, 163), 1px 1px 10px rgb(0, 30, 163);
 }
-.license{
-    all:unset;
+
+.license {
+    all: unset;
+}
+
+/* CSS for Padding/ Margin Style */
+
+.pdr-2 {
+    padding-right: 2px;
+}
+
+.pdl-0 {
+    padding-left: 0;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.pdr-10 {
+    padding-right: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ta-left {
+    text-align: left;
+}
+
+.sm-pad {
+    padding: 5px;
 }

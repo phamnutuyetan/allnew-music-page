@@ -17,29 +17,10 @@
 </head>
 
 <body>
-    <!-- <div class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark custom">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-    </div> -->
-
     <div class="lp-vertical-nav">
-        <!-- <div style="height: 120px">
-            </div> -->
-        <div id="btn-close-open" style="background-image: url(images/play-page/button_open.png); transition: 0.5s">
+        <div id="btn-close-open">
         </div>
-        <div id="lp-vertical-nav-content" style="vertical-align: middle; width: 150px">
-
+        <div id="lp-vertical-nav-content">
             <div>
                 <div class="nav-box">
                     <img src="images/play-page/home-xxl1.png">
@@ -74,11 +55,47 @@
 
     </div>
 
+
     <center>
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 " size="40" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle profile-button" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img class="avatar-img-btn" src="~/../images/avatar.png" width="36px" height="36px">
+                    </button>
+                    <div class="dropdown-menu" >
+                        <button class="dropdown-item" type="button">Trang cá nhân</button>
+                        <button class="dropdown-item" type="button">Danh sách yêu thích</button>
+                        <button class="dropdown-item" type="button">Theo dõi</button>
+                        <button class="dropdown-item" type="button">Nhạc Upload</button>
+                        <button class="dropdown-item" type="button">Nâng cấp VIP</button>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" type="button">Đăng xuất</button>
+                    </div>
+                </div>
+
+                <button class="btn button-upload">
+                    <img class="img-upload" src="~/../images/upload.png">Upload nhạc
+                </button>
+            </nav>
+        </div>
         <div id="main-content">
             <div id="slider-content">
                 <div class="row">
-                    <div class="col-lg-8" style="padding-right:2px">
+                    <div class="col-lg-8 pdr-2">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -106,7 +123,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4" style="padding-left:0">
+                    <div class="col-lg-4 pdl-0">
                         <div class="img-holder">
                             <img class="img-fluid" src="~/../images/Hinh1.png" />
                             <p>NHẠC NỔI BẬT</p>
@@ -127,9 +144,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row" style="margin-top:20px">
+            <div class="row mt-20">
                 <div class="col-lg-8">
-                    <div style="padding-right:10px;">
+                    <div class="pdr-10">
                         <h4>NGHỆ SĨ</h4>
                     </div>
                     <div id="artist-hot">
@@ -195,25 +212,25 @@
                     <h4>ALBUM HOT</h4>
                     <div id="album-hot">
                         <div class="row ">
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-1.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3 " style="margin-top:10px">
+                            <div class="col-lg-3 mt10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-2.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-3.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-4.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
@@ -221,25 +238,25 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-1.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-2.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-3.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-4.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
@@ -247,25 +264,25 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-1.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-2.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-3.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3   " style="margin-top:10px">
+                            <div class="col-lg-3 mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-image-4.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
@@ -278,55 +295,55 @@
                     <h4>BẢNG XẾP HẠNG BÀI HÁT</h4>
                     <ul class="list-unstyled bang-xep-hang">
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/singer-1.jpg" width="64px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
                         </div>
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/singer-1.jpg" width="64px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
                         </div>
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/singer-1.jpg" width="64px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
                         </div>
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/singer-1.jpg" width="64px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
                         </div>
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/singer-1.jpg" width="64px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
                         </div>
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/singer-1.jpg" width="64px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
@@ -336,30 +353,30 @@
                     </ul>
                 </div>
             </div>
-            <div class="row" style="margin-top:20px">
+            <div class="row mt-20">
                 <div class="col-lg-8">
                     <h4>VIDEO HOT</h4>
                     <div id="video-hot">
                         <div class="row">
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-1.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-2.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-3.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-4.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
@@ -367,25 +384,25 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-1.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-2.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-3.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-4.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
@@ -393,25 +410,25 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-1.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-2.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-3.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3  " style="margin-top:10px">
+                            <div class="col-lg-3  mt-10">
                                 <div class="card grid-image">
                                     <img class="card-img-top" src="~/../images/grid-video-4.jpg" alt="Card image cap">
                                     <p class="card-text">Hương Tràm</p>
@@ -424,37 +441,37 @@
                     <h4>BẢNG XẾP HẠNG VIDEO</h4>
                     <ul class="list-unstyled bang-xep-hang">
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/grid-video-1.jpg" width="120px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
                         </div>
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/grid-video-1.jpg" width="120px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
                         </div>
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/grid-video-1.jpg" width="120px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
                         </div>
                         <hr class="hr-style">
-                        <div class="media" style="margin-bottom:10px">
+                        <div class="media mb-10">
                             <img src="~/../images/grid-video-1.jpg" width="120px" height="64px">
                             <div class="media-body list-media-text">
-                                <h6 style="text-align:left">Sống Xa Anh Chẳng Dễ Dàng</h6>
+                                <h6 class="ta-left">Sống Xa Anh Chẳng Dễ Dàng</h6>
                                 <p class="extralight-text">Tên Ca Sĩ</p>
                                 <p class="small-text">Lượt xem</p>
                             </div>
@@ -472,15 +489,15 @@
         <div id="footer">
             <center>
                 <div class="content-footer">
-                    
-                    <div class="content-footer-left" itemscope="" itemtype="http://schema.org/Organization" style="display: inline-block; vertical-align: top">
-                        <img itemprop="logo" src="images/logo2.png" height="100%" width="100%" alt="Zing MP3 - Đỉnh Cao Âm Nhạc" style=" height: 70px; width: 140px">
+
+                    <div class="content-footer-left" itemscope="" itemtype="http://schema.org/Organization">
+                        <img class="footer-logo" itemprop="logo" src="images/logo2.png" height="100%" width="100%">
                         <br>
                         <p class="license">© 2015 4CONANG Corporation</p>
                         <br>
                         <p class="license">Giấy phép MXH số 314/GP-BTTTT.</p>
                     </div>
-                    <div class="content-footer-center" style="display: inline-block;">
+                    <div class="content-footer-center">
                         <div>
                             <a title="Giới thiệu" rel="nofollow" href="https://mp3.zing.vn/huong-dan/about">Giới thiệu</a>
                         </div>
@@ -528,23 +545,17 @@
                             <a title="divên hệ" rel="nofollow" href="https://mp3.zing.vn/huong-dan/contact">liên hệ</a>
                         </div>
                     </div>
-                    <div class="content-footer-right" style="display: inline-block;">
-
-                    </div>
                 </div>
             </center>
 
         </div>
     </footer>
 
+    <script src="~/../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="~/../js/popper.min.js"></script>
+    <script src="~/../js/Chart.min.js"></script>
+    <script src="~/../js/bootstrap.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/usm/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
     <script>
         var navBar = {
             isOpenNav: false,
@@ -616,7 +627,7 @@
             }
         );
 
-        $("#btn-close-open").mouseenter(function () {
+        $("#btn-close-open").click(function () {
             setWidthNav();
         })
         $(window).resize(() => {
