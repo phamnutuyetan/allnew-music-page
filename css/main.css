@@ -25,16 +25,16 @@
 /* Layout for Content */
 
 #main-content {
-    /* background-color: #f19d9d; */
     width: 85%;
     height: 100%;
-    margin-top: 10px;
+    float: right;
+
 }
 
 #slider-content {
     width: 100%;
-    background-color: rgba(248, 248, 247, 0.466);
-    padding: 20px
+    background-color: rgb(248, 248, 247);
+    padding: 10px
 }
 
 .bang-xep-hang {
@@ -75,8 +75,6 @@
 }
 
 #artist-hot {
-    width: 100%;
-    height: 100%;
     padding: 10px;
 }
 
@@ -87,34 +85,77 @@
     background-color: #1722189a;
 }
 
+#main-menu{
+    height: 100%;
+    margin-left: 60px;
+    margin-top: 60px;
+
+}
+
+/* Animated Button */
+
+.animated-btn {
+    background-color: transparent;
+    border: none;
+    color: #50b4c4;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border-left: #2132f0 dashed 1px;
+    
+  }
+  
+  .animated-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .animated-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .animated-btn:hover span {
+    padding-right: 35px;
+    color: #c4f3fd;
+  }
+  .animated-btn:hover{
+
+background-color: #005667      
+  }
+  
+  .animated-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 /* Style for Tags */
 
-body {
-    background-image: url("../images/background2.jpeg");
+html,body {
+    background-image: url("../images/background6.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-    background-blend-mode: color-burn;
-    background-color: #027fbdda
-}
-
-hr.hr-style {
-    border-top: 1px solid #fa1f1f;
-    border-bottom: 1px solid rgb(253, 90, 90);
+    /* background-blend-mode: color-burn;
+    background-color: #027fbdda */
 }
 
 a {
-    color: #ffffff;
     text-shadow: 0 0 15px rgb(48, 5, 240), 0 0 15px rgb(48, 5, 240), 0 0 15px rgb(48, 5, 240), ;
 }
 
 h4 {
-    font-family: 'Coiny';
-    text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255);
-    color: #1d0281;
-    background-image: url('../images/blue-glow-line-png-22.png');
-    margin-top: 20px
+    font-family: sans-serif;
 }
 
 
@@ -142,22 +183,25 @@ h4 {
 
 
 /* Overwrite Bootstrap Style */
-
+.container{
+    position:absolute;
+   bottom:0;
+}
 .custom-navbar {
-    background-color: #ffffff;
-    width: 800px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    background-color: transparent;
+    width: 85%;
+    margin-top: 5px;
 }
 
 .btn-outline-success {
     border: 1px solid #4355fca4;
-    color: #000cad;
-    background-color: #ffffffb2
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 0;
 }
 
 .dropdown-toggle {
-    color: #000cad
+    color: #ffffff
 }
 
 .btn-outline-success:hover {
@@ -167,7 +211,24 @@ h4 {
 }
 
 .form-control {
-    border: 1px solid #4355fca4;
+    border: transparent;
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: #6976ff solid 1px;
+    color: white !important;
+    margin-left: 10px;
+}
+
+.form-control::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.form-control:focus {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none !important;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -181,7 +242,8 @@ h4 {
     border-color: transparent;
 }
 
-.profile-button:hover {
+.profile-button:hover,
+.button-upload:hover {
     color: #fff;
     background-color: transparent;
     border-color: transparent;
@@ -203,11 +265,13 @@ h4 {
     color: #fff
 }
 
-.button-upload {
+.upload-button {
     background-color: transparent;
     padding: 0;
     margin-left: 15px;
     font-size: 14px;
+    color: #fff;
+    border-color: transparent
 }
 
 .img-upload {
@@ -234,52 +298,66 @@ p {
     margin-left: 20px;
 }
 
-
+#plList li:hover{
+    background-color: rgba(209, 209, 209, 0.418)
+}
 /* Style for Typography */
 
 .small-text {
     font-size: 14px;
     font-style: italic;
     font-family: Mitr-ExtraLight;
-    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.904), 1px 1px #000000;
 }
 
 .extralight-text {
     font-size: 14px;
     font-family: 'Mitr-ExtraLight';
-    text-shadow: 1px 1px 1px rgba(250, 0, 0, 0.904), 1px 1px #000000;
 }
 
 .card-text {
     text-align: center;
     margin: 0;
-    color: white;
-    text-shadow: -1px -1px 10px rgb(0, 30, 163), 1px -1px 10px rgb(0, 30, 163), -1px 1px 10px rgb(0, 30, 163), 1px 1px 10px rgb(0, 30, 163);
 }
 
 
-/* Components Decoration */ 
+/* Components Decoration */
+
+.bxh-border {
+    background-color: #ffffff;
+    border: 8px solid #fff;
+}
+
+.content-border {
+    border: 8px solid #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #000000ce
+}
+
+.title {
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.title-hr {
+    border-bottom: double 1px #fff;
+}
+
 .glow-border {
-    border: 10px solid transparent;
-    border-image: url('../images/border1.png') 30 round;
+    border: 10px solid #fff;
 }
 
 .shadow {
-    box-shadow: 2px 2px 2px rgba(238, 161, 9, 0.719);
+    box-shadow: 2px 2px rgba(255, 255, 255, 0.719);
 }
 
 .media>div>h6,
 .media>div>p,
 ul>a {
-    text-shadow: 2px 2px 2px rgba(250, 0, 0, 0.904), 2px 2px 2px #000000;
-    color: #ffffff;
     font-family: 'Mitr';
 }
 
-.media>img,
-hr {
-    box-shadow: 2px 2px 2px rgba(250, 0, 0, 0.904);
-}
+.media>img {}
 
 ul>a:hover {
     color: white;
@@ -289,6 +367,7 @@ ul>a:hover {
 .license {
     all: unset;
 }
+
 
 /* CSS for Padding/ Margin Style */
 
@@ -322,4 +401,11 @@ ul>a:hover {
 
 .sm-pad {
     padding: 5px;
+}
+
+.mgl-20{
+    margin-left: 30px
+}
+.mgr-20{
+    margin-right: 30px
 }
