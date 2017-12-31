@@ -1,0 +1,51 @@
+<link href="css/topic.css" rel="stylesheet" type="text/css" />
+
+<!-- Example row of columns -->
+<div class="row">
+    <div class="col-sm-4 swing" style="padding: 5px;">
+        <ul id="list1">
+        </ul>
+    </div>
+    <div class="col-sm-4 swing" style="padding: 5px;">
+        <ul id="list2">
+           
+        </ul>
+    </div>
+    <div class="col-sm-4 swing" style="padding: 5px;">
+            <ul id="list3">
+                
+            </ul>
+    </div>
+</div>
+<!-- <ul id="listLeft" style="padding: 0;">
+
+    </ul>
+    <ul id="listRight" style="padding: 0;">
+    </ul> -->
+
+
+<script src='js/jquery-3.2.1.min.js'></script>
+<script>
+    $(document).ready(function () {
+            loadListButton('list1');
+            loadListButton('list2');
+            loadListButton('list3');
+    })
+    var l = 0;
+
+    function loadListButton(listName) {
+        setTimeout(function () {
+            var list = document.getElementById(listName);
+            var newLI = document.createElement('li');
+            newLI.innerHTML = '<a href="#" class="btn btn-sm animated-button victoria-one topic1">CHILL</a>'
+            list.appendChild(newLI);
+            setTimeout(function () {
+                newLI.className = newLI.className + "show";
+            }, 10);
+            l = l + 1;
+            if (l < 4) {
+                loadListButton(listName)
+            }
+        }, 50)
+    }
+</script>

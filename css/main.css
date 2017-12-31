@@ -88,7 +88,7 @@
 #main-menu{
     height: 100%;
     margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 80px;
 
 }
 
@@ -97,7 +97,7 @@
 .animated-btn {
     background-color: transparent;
     border: none;
-    color: #50b4c4;
+    color: #016f80;
     text-align: center;
     font-size: 28px;
     padding: 5px;
@@ -142,8 +142,7 @@ background-color: #005667
 /* Style for Tags */
 
 html,body {
-    background-image: url("../images/background6.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/background.png");
     background-attachment: fixed;
     background-size: 100%;
     /* background-blend-mode: color-burn;
@@ -183,6 +182,13 @@ h4 {
 
 
 /* Overwrite Bootstrap Style */
+#npTitle{
+    font-weight: bold;
+    -webkit-text-stroke: 0.7px rgb(1, 9, 12);
+}
+.search-form{
+    margin-top: 20px;
+}
 .container{
     position:absolute;
    bottom:0;
@@ -298,6 +304,10 @@ p {
     margin-left: 20px;
 }
 
+#plList{
+    padding-left: 0px;
+}
+
 #plList li:hover{
     background-color: rgba(209, 209, 209, 0.418)
 }
@@ -357,7 +367,7 @@ ul>a {
     font-family: 'Mitr';
 }
 
-.media>img {}
+
 
 ul>a:hover {
     color: white;

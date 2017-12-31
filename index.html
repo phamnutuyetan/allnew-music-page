@@ -13,28 +13,14 @@
     <link rel="stylesheet" href="~/../css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/play-page.css">
     <link rel="stylesheet" type="text/css" href="css/plyr.css">
-    <link rel="stylesheet" type="text/css" href="player.css">
+    <link rel="stylesheet" type="text/css" href="css/player.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg custom-navbar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-            
-        </div>
-    </nav>
-
-    <div class="row">
-        <div class="col-lg-3 pdl-0">
+    <div class="row swing">
+        <div class="col-lg-2 pdl-0">
             <div id="main-menu">
                 <button class="animated-btn">
                     <span>Trang chủ </span>
@@ -74,7 +60,7 @@
                 <br/>
             </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-7 show" style="margin-top: 100px;margin-bottom: 40px;">
             <div class="container">
                 <div class="column add-bottom">
                     <div id="mainwrap">
@@ -82,32 +68,31 @@
                             <span class="left" id="npAction">Paused...</span>
                             <span class="right" id="npTitle"></span>
                         </div>
-                        <div id="audiowrap">
+                        <div id="audiowrap" style="height: 100px">
                             <div id="audio0">
                                 <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
                             </div>
-                            <div id="tracks">
-                                <a id="btnPrev">&larr;</a>
-                                <a id="btnNext">&rarr;</a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-3">
-                <form class="form-inline my-2 my-lg-0 ">
-                        <input class="form-control" size="30" type="search" placeholder="Search" aria-label="Search">
-                    </form>
+            <form class="form-inline search-form">
+                <input class="form-control" size="30" type="search" placeholder="Search" aria-label="Search">
+            </form>
             <div id="plwrap">
                 <ul id="plList"></ul>
+                <!-- <div id="tracks">
+                    <a id="btnPrev">&larr;</a>
+                    <a id="btnNext">&rarr;</a>
+                </div> -->
             </div>
 
         </div>
 
     </div>
-
-
 
     <!-- <div id="main-content">
         <div id="slider-content">
@@ -507,11 +492,19 @@
     <script src="~/../js/Chart.min.js"></script>
     <script src="~/../js/bootstrap.min.js"></script>
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="smoothscrolling.js"></script>
+    <script src='js/jquery-3.2.1.min.js'></script>
+    <script src="js/smoothscrolling.js"></script>
     <script src="js/html5media.min.js"></script>
     <script src="js/plyr.js"></script>
-    <script src="player.js"></script>
+    <script src="js/player.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $("button").click(function () {
+                $('.col-lg-7').html('<object data-transition="flip" data="topic.html" width="100%" height="100%"></object>')
+            });
+        });
+    </script>
 
 </body>
 
